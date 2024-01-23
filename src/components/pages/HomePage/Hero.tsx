@@ -7,9 +7,10 @@ const Hero = () => {
   return (
     <section
       style={{
-        backgroundImage: "url(/images/bg-pattern.svg)",
+        backgroundImage:
+          "url(https://ik.imagekit.io/wsn0zb24lgi/bg-pattern_chIiUTUTt.svg)",
         backgroundAttachment: "fixed",
-        backgroundPosition: "center 1%",
+        backgroundPosition: "center -41%",
         backgroundSize: "contain",
         backgroundRepeat: "no-repeat",
       }}
