@@ -9,7 +9,7 @@ const Button = (props: {
   const { className, type, action, children } = props;
   return (
     <button
-      className={`px-6 py-3.5 rounded-[100px] shadow justify-center items-center gap-1 inline-flex text-base font-semibold font-['Inter'] leading-none ${className}`}
+      className={`px-6 py-3.5 rounded-[100px] shadow justify-center items-center gap-1 inline-flex text-base font-semibold font-inter leading-none ${className}`}
       onClick={action}
     >
       {children}

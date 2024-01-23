@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  background: rgb(249, 251, 249);
+  background: white;
   overflow-x: hidden;
 }
 
@@ -21,4 +21,8 @@ body {
 
 button {
   @apply whitespace-nowrap;
+}
+
+* {
+  @apply transition ease-in-out duration-300;
 }

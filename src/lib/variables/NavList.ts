@@ -1,16 +1,16 @@
 export const NavList = [
   {
-    href: "/products",
+    href: "/#products",
     label: "Products",
     id: "products",
     sub: [],
   },
   {
-    href: "/solutions",
+    href: "/#solutions",
     label: "Solutions",
     id: "solutions",
     sub: [],
   },
-  { href: "/resources", label: "Resources", id: "resources", sub: [] },
-  { href: "/pricing", label: "Pricing", id: "pricing" },
+  { href: "/#resources", label: "Resources", id: "resources", sub: [] },
+  { href: "/#pricing", label: "Pricing", id: "pricing" },
 ];
