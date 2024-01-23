@@ -75,7 +75,7 @@ const Footer = () => {
   return (
     <footer id="solutions">
       <div className="bg-indigo-50">
-        <div className=" max-w-screen-xl mx-auto px-5 md:px-16 flex flex-wrap items-start justify-between py-9 md:py-20 gap-5 md:gap-8">
+        <div className=" max-w-screen-xl mx-auto px-5 md:px-16 flex flex-wrap items-start justify-between py-9 md:py-20 gap-x-5 gap-y-9 md:gap-8">
           <div className="lg:flex-1 w-full max-w-96">
             <Link href="/" title="Go to home page">
               <div className="w-[152px] h-7 relative">
@@ -126,7 +126,7 @@ const Footer = () => {
       </div>
 
       <div className="bg-gray-50">
-        <div className=" max-w-screen-xl mx-auto px-5 md:px-16 py-7 flex flex-col lg:flex-row justify-between">
+        <div className=" max-w-screen-xl mx-auto px-5 md:px-16 py-7 flex flex-col lg:flex-row justify-between gap-6">
           <p className="text-gray-500 text-sm md:text-base font-outfit">
             &copy; {new Date().getFullYear()} ClearLink. All rights reserved.
           </p>
@@ -152,7 +152,7 @@ export default Footer;
 const FooterLinks = (props: { header: string; links: any }) => {
   const { header, links } = props;
   return (
-    <div className="max-w-40 flex-col justify-start items-start gap-4 inline-flex">
+    <div className="w-[calc(50%-20px)] md:max-w-40 flex-col justify-start items-start gap-2.5 sm:gap-4 flex">
       <h4 className="text-gray-500 text-base font-semibold font-['Inter'] leading-normal">
         {header}
       </h4>
@@ -161,7 +161,7 @@ const FooterLinks = (props: { header: string; links: any }) => {
         <Link
           href={link.href}
           key={`${link.text}-${i}`}
-          className="text-slate-600 text-lg font-semibold font-['Inter'] leading-7"
+          className="text-slate-600 text-sm sm:text-base md:text-lg font-semibold font-['Inter'] leading-7"
         >
           {link.text}
         </Link>

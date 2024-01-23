@@ -24,7 +24,7 @@ const FAQs = () => {
   return (
     <section id="resources">
       <div className="max-w-screen-xl mx-auto py-10 md:py-20 px-5 md:px-16 flex flex-col lg:flex-row lg:items-stretch gap-7 md:gap-14 justify-between">
-        <div className=" max-w-[490px]">
+        <div className=" max-w-[490px] text-center lg:text-left">
           <span className="text-blue-700 text-lg font-semibold font-['Inter'] leading-7">
             Support
           </span>
@@ -44,7 +44,7 @@ const FAQs = () => {
               return (
                 <div
                   key={`${question} - ${index}`}
-                  className={`py-5 p-8 ${
+                  className={`py-5 p-4 md:p-8 ${
                     show === index &&
                     "bg-gray-50 border-gray-200 border rounded-2xl"
                   }  border-b border-gray-200 last:border-b-0`}

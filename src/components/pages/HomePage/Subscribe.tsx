@@ -5,7 +5,7 @@ import { FaRegCheckCircle } from "react-icons/fa";
 const Subscribe = () => {
   return (
     <section className="relative py-10 md:py-20 " id="pricing">
-      <div className="w-full md:max-w-xl absolute right-0 top-2/4 -translate-y-1/2 aspect-[872/609]">
+      <div className="w-full md:max-w-xl absolute right-0 top-2/4 -translate-y-1/2 aspect-[872/609] hidden lg:block ">
         <Image
           src="https://ik.imagekit.io/wsn0zb24lgi/screen_ksQ5T0uuP.svg"
           alt="man smilling"
@@ -27,7 +27,10 @@ const Subscribe = () => {
               "Access to all features",
               "Peronalized onboarding",
             ].map((val) => (
-              <div key={val} className="flex items-center gap-3 my-3">
+              <div
+                key={val}
+                className="flex items-center gap-1.5 sm:gap-2.5 my-3"
+              >
                 <FaRegCheckCircle fill="#175CD3" size={28} />
                 &nbsp;
                 <span className="text-slate-600 text-xl sm:text-2xl font-normal font-['Inter']">
@@ -37,7 +40,7 @@ const Subscribe = () => {
             ))}
           </div>
 
-          <div className="flex flex-col lg:flex-row items-center gap-2">
+          <div className="flex flex-col lg:flex-row items-center gap-4 md:gap-2">
             <Button className=" bg-white border border-gray-400 text-gray-900 ">
               Talk to sales
             </Button>
@@ -45,7 +48,15 @@ const Subscribe = () => {
             <Button className="bg-blue-700 text-white">Sign up for free</Button>
           </div>
         </div>
-        <div className="lg:flex-1"></div>
+        <div className="lg:flex-1 lg:hidden block relative w-full aspect-[872/609]">
+          <Image
+            src="https://ik.imagekit.io/wsn0zb24lgi/screen_ksQ5T0uuP.svg"
+            alt="man smilling"
+            fill
+            sizes="100%"
+            className=" object-contain"
+          />
+        </div>
       </div>
     </section>
   );

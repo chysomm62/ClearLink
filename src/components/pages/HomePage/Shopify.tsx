@@ -5,7 +5,7 @@ import { FaStar } from "react-icons/fa";
 const Shopify = () => {
   return (
     <section className=" bg-gray-50">
-      <div className="max-w-screen-xl mx-auto py-10 md:py-20 px-5 md:px-16 flex flex-col lg:flex-row lg:items-stretch gap-5 md:gap-4">
+      <div className="max-w-screen-xl mx-auto py-10 md:py-20 px-5 md:px-16 flex flex-col lg:flex-row lg:items-stretch gap-7 md:gap-4">
         <div className="lg:flex-1">
           <div className="w-[112.79px] h-8 relative">
             <Image
@@ -35,7 +35,7 @@ const Shopify = () => {
           </h2>
 
           <div className="justify-start items-start gap-3 flex mt-5 sm:mt-8">
-            <div className="grow shrink basis-0 h-[60px] justify-start items-start gap-4 flex">
+            <div className="justify-start items-start gap-4 flex">
               <div className="w-14 h-14 rounded-[200px] relative">
                 <Image
                   src="https://ik.imagekit.io/wsn0zb24lgi/sarah_ULI7sqVC5.svg"
@@ -45,7 +45,7 @@ const Shopify = () => {
                   className=" object-contain"
                 />
               </div>
-              <div className="grow shrink basis-0 flex-col justify-start items-start gap-0.5 flex">
+              <div className="flex-col justify-start items-start gap-0.5 flex">
                 <h4 className="self-stretch text-gray-900 text-lg sm:text-xl font-semibold font-['Inter']">
                   Sarah Thompson
                 </h4>
@@ -54,14 +54,14 @@ const Shopify = () => {
                 </p>
               </div>
             </div>
-            <div className="justify-start items-start gap-8 flex">
+            {/* <div className="justify-start items-start gap-8 flex">
               <div className="w-14 h-14 bg-white bg-opacity-90 rounded-[28px] border border-blue-100 justify-center items-center gap-3 flex">
                 <div className="w-6 h-6 relative" />
               </div>
               <div className="w-14 h-14 bg-white bg-opacity-90 rounded-[28px] border border-blue-100 justify-center items-center gap-3 flex">
                 <div className="w-6 h-6 relative" />
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="max-w-xl w-full aspect-[640/496] relative">

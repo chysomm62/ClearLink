@@ -37,7 +37,7 @@ const advantages = [
 const Advantage = () => {
   return (
     <section id="products">
-      <div className="max-w-screen-xl mx-auto py-10 md:py-20 px-5 md:px-16">
+      <div className="max-w-screen-xl mx-auto py-10 md:py-20 px-5 md:px-16 text-center lg:text-left">
         <span className="text-blue-700 text-base sm:text-lg font-semibold font-['Inter']">
           The ClearLink Advantage
         </span>
@@ -52,11 +52,14 @@ const Advantage = () => {
         <div className="flex flex-col lg:flex-row lg:items-stretch gap-7 md:gap-8 mt-6 md:mt-10">
           <div className="lg:flex-1 grid grid-cols-2 justify-between gap-6 md:gap-8">
             {advantages.map((advantage, i) => (
-              <div key={`${advantage.title}-${i}`}>
+              <div
+                key={`${advantage.title}-${i}`}
+                className="flex flex-col gap-2 items-center md:items-start"
+              >
                 <div className="w-14 h-14 p-4 bg-gray-50 rounded-[100px] border border-gray-200 justify-center items-center gap-2.5 inline-flex mb-3">
                   <div className="text-2xl relative">{advantage.icon}</div>
                 </div>
-                <h3 className="text-gray-900 text-2xl font-semibold font-['Inter'] leading-loose">
+                <h3 className="text-gray-900 text-lg sm:text-xl md:text-2xl font-semibold font-['Inter'] leading-tight">
                   {advantage.title}{" "}
                 </h3>
                 <p className="text-slate-600 text-base md:text-lg font-['Inter']">
