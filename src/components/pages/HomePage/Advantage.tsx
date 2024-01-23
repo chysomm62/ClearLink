@@ -5,7 +5,7 @@ import {
   VideoRecorderIcon,
 } from "@/assets/icons";
 import Image from "next/image";
-import React from "react";
+import styles from "./Home.module.css";
 
 const advantages = [
   {
@@ -68,21 +68,16 @@ const Advantage = () => {
               </div>
             ))}
           </div>
-          <div className="relative w-full md:max-w-[544px] aspect-[544/527]">
-            <div
-              className="w-[238.23px] h-[157.32px] absolute -top-24 origin-top-left rotate-[-154.74deg]"
-              style={{
-                backgroundImage: "url(/images/Hand-drawn arrow.svg)",
-                backgroundSize: "contain",
-                backgroundPosition: "center",
-              }}
-            ></div>
+          <div
+            className={`relative w-full md:max-w-[544px] aspect-[544/527] ${styles.downArrow}`}
+          >
             <Image
               src="https://ik.imagekit.io/wsn0zb24lgi/peoples_FsTB2xLJ7.svg"
               alt="People of different races smiling"
               fill
               sizes="100%"
               className=" object-contain"
+              priority
             />
           </div>
         </div>

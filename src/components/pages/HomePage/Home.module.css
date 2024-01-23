@@ -1,0 +1,26 @@
+.downArrow {
+  position: relative;
+}
+
+.downArrow::after {
+  content: "";
+  left: 15%;
+  position: absolute;
+  top: -15%;
+  min-width: 138px;
+  min-height: 87px;
+  background-image: url("/images/Hand-drawn arrow.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+
+  @apply animate-pulse;
+}
+
+@media (min-width: 768px) {
+  .downArrow::after {
+    min-width: 238px;
+    top: -26%;
+    min-height: 157px;
+  }
+}

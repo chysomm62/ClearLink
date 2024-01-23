@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { FaStar } from "react-icons/fa";
+import { FaArrowLeft, FaArrowRight, FaStar } from "react-icons/fa";
 
 const Shopify = () => {
   return (
@@ -49,19 +49,19 @@ const Shopify = () => {
                 <h4 className="self-stretch text-gray-900 text-lg sm:text-xl font-semibold font-['Inter']">
                   Sarah Thompson
                 </h4>
-                <p className="self-stretch text-slate-600 text-base sm:text-lg font-normal font-['Inter']">
+                <p className="self-stretch text-slate-600 text-sm sm:text-lg font-normal font-['Inter']">
                   Project Manager, Shopify
                 </p>
               </div>
             </div>
-            {/* <div className="justify-start items-start gap-8 flex">
-              <div className="w-14 h-14 bg-white bg-opacity-90 rounded-[28px] border border-blue-100 justify-center items-center gap-3 flex">
-                <div className="w-6 h-6 relative" />
+            <div className="justify-start items-start gap-4 sm:gap-8 flex ml-auto">
+              <div className="w-12 sm:w-14 h-12 sm:h-14 bg-white bg-opacity-90 rounded-[28px] border border-blue-100 justify-center items-center gap-3 flex text-lg sm:text-2xl">
+                <FaArrowLeft fill="#175CD3" />
               </div>
-              <div className="w-14 h-14 bg-white bg-opacity-90 rounded-[28px] border border-blue-100 justify-center items-center gap-3 flex">
-                <div className="w-6 h-6 relative" />
+              <div className="w-12 sm:w-14 h-12 sm:h-14 bg-white bg-opacity-90 rounded-[28px] border border-blue-100 justify-center items-center gap-3 flex text-lg sm:text-2xl">
+                <FaArrowRight fill="#175CD3" />{" "}
               </div>
-            </div> */}
+            </div>
           </div>
         </div>
         <div className="max-w-xl w-full aspect-[640/496] relative">

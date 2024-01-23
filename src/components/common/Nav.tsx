@@ -48,8 +48,10 @@ const Nav = () => {
       }`}
     >
       <div
-        className={`max-w-screen-xl mx-auto shadow-12 flex justify-between items-start lg:items-center px-8 py-4 bg-gray-100 rounded-[100px] border border-gray-300 relative ${
-          isMenuOpen ? "menu overflow-y-auto rounded-3xl" : "h-[5.25rem]"
+        className={`max-w-screen-xl mx-auto shadow-12 flex justify-between items-start lg:items-center px-8 py-4 bg-gray-100  border border-gray-300 relative ${
+          isMenuOpen
+            ? "menu overflow-y-auto rounded-3xl lg:rounded-[100px]"
+            : "h-[5.25rem] rounded-[100px]"
         }`}
       >
         <Link href="/" title="Go to home page" className="hidden lg:block ">
@@ -132,8 +134,8 @@ const Dropdown = (props: { link: any; basePath: string; linkClick: any }) => {
         }}
         className={
           basePath === link.id
-            ? `text-gray-500 text-lg font-semibold font-inter leading-7 hover:text-green-1 cursor-pointer text-green-1 lg:relative transition duration-500 ease-in flex items-center justify-between py-3 tracking-wider`
-            : "text-gray-500 text-lg font-semibold font-inter leading-7 hover:text-green-1 cursor-pointer lg:relative transition duration-500 ease-in flex items-center justify-between py-3 tracking-wider"
+            ? `text-gray-500 text-lg font-semibold font-inter leading-7 hover:text-green-1 cursor-pointer text-green-1 lg:relative transition duration-500 ease-in flex items-center justify-between py-3 tracking-wider hover:text-blue-700`
+            : "text-gray-500 text-lg font-semibold font-inter leading-7 hover:text-green-1 cursor-pointer lg:relative transition duration-500 ease-in flex items-center justify-between py-3 tracking-wider hover:text-blue-700"
         }
       >
         {link.label}{" "}

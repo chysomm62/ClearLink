@@ -2,9 +2,7 @@
 
 import { MinusIcon, PlusIcon } from "@/assets/icons";
 import { FAQuestions } from "@/lib/variables/FAQuestions";
-import Link from "next/link";
 import React, { useState } from "react";
-import { FaChevronDown } from "react-icons/fa";
 
 const FAQs = () => {
   const [show, setShow] = useState(null);

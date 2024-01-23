@@ -14,7 +14,7 @@ const Hero = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="max-w-screen-xl mx-auto py-7 md:py-20 pt-28 px-5 md:px-16 flex flex-col lg:flex-row  items-center gap-5 lg:gap-0.5 bg-blend-multiply bg-white/30">
+      <div className="max-w-screen-xl mx-auto py-7 md:py-20 pt-32 md:pt-36 px-5 md:px-16 flex flex-col lg:flex-row  items-center gap-5 lg:gap-0.5 bg-blend-multiply bg-white/30">
         <div className="lg:flex-1 max-w-full text-center lg:text-left">
           <h1 className=" md:max-w-3xl text-slate-800 text-4xl sm:text-5xl md:text-6xl leading-tight font-semibold font-inter">
             Uniting the world,
