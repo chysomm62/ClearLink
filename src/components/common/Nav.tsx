@@ -43,7 +43,7 @@ const Nav = () => {
 
   return (
     <nav
-      className={`fixed w-full top-0 z-10 px-2 py-2 md:px-14 md:py-5 lg:pb-0 ${
+      className={`fixed w-full top-0 z-10 px-2 py-2 md:px-10 md:py-5 lg:pb-0 ${
         isMenuOpen && "bottom-0"
       }`}
     >
