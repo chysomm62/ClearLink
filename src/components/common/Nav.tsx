@@ -47,7 +47,7 @@ const Nav = () => {
 
   return (
     <nav
-      className={`fixed w-full top-0 z-10 px-2 py-2 md:px-6 md:py-5 lg:pb-0 ${
+      className={`fixed w-full top-0 z-10 px-2 py-2 md:px-14 md:py-5 lg:pb-0 ${
         isMenuOpen && "bottom-0"
       }`}
     >
@@ -61,7 +61,6 @@ const Nav = () => {
             <Image
               fill
               sizes="100%"
-              onClick={applyHandler}
               src={Logo}
               alt="Clear link logo"
               className="z-50 w-24 lg:w-auto"
@@ -74,7 +73,6 @@ const Nav = () => {
             <Image
               fill
               sizes="100%"
-              onClick={applyHandler}
               src={mobileLogo}
               alt="Clear link logo"
               className="z-50 w-24 lg:w-auto"
@@ -138,8 +136,8 @@ const Dropdown = (props: { link: any; basePath: string; linkClick: any }) => {
         }}
         className={
           basePath === link.id
-            ? `text-gray-500 text-lg font-semibold font-['Inter'] leading-7 hover:text-green-1 cursor-pointer text-green-1 lg:relative transition duration-500 ease-in flex items-center justify-between py-3 tracking-wider`
-            : "text-gray-500 text-lg font-semibold font-['Inter'] leading-7 hover:text-green-1 cursor-pointer lg:relative transition duration-500 ease-in flex items-center justify-between py-3 tracking-wider"
+            ? `text-gray-500 text-lg font-semibold font-inter leading-7 hover:text-green-1 cursor-pointer text-green-1 lg:relative transition duration-500 ease-in flex items-center justify-between py-3 tracking-wider`
+            : "text-gray-500 text-lg font-semibold font-inter leading-7 hover:text-green-1 cursor-pointer lg:relative transition duration-500 ease-in flex items-center justify-between py-3 tracking-wider"
         }
       >
         {link.label}{" "}

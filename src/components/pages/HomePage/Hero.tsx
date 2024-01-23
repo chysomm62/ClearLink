@@ -14,14 +14,14 @@ const Hero = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="max-w-screen-xl mx-auto py-7 md:py-12 pt-32 md:pt-36 px-5 md:px-12 flex flex-col lg:flex-row mt-9 items-center gap-0.5">
+      <div className="max-w-screen-xl mx-auto py-7 md:py-20 pt-24 md:pt-28 px-5 md:px-16 flex flex-col lg:flex-row mt-9 items-center gap-0.5">
         <div className="flex-1">
-          <h1 className=" md:max-w-3xl text-slate-800 text-4xl sm:text-5xl md:text-6xl leading-tight font-semibold font-['Inter']">
+          <h1 className=" md:max-w-3xl text-slate-800 text-4xl sm:text-5xl md:text-6xl leading-tight font-semibold font-inter">
             Uniting the world,
             <br />
             one video call at a time
           </h1>
-          <p className="md:max-w-xl text-gray-500 text-lg sm:text-xl md:text-2xl font-normal font-['Inter'] leading-loose my-2.5 md:my-3.5">
+          <p className="md:max-w-xl text-gray-500 text-lg sm:text-xl md:text-2xl font-normal font-inter leading-loose my-2.5 md:my-3.5">
             Experience the future of communication with ClearLink – where
             crystal-clear video conferencing meets unparalleled simplicity.
           </p>
@@ -56,17 +56,17 @@ const Hero = () => {
                     <FaStar fontSize={20} fill="#FDB022" />
                   </div>
                 ))}
-                <span className="text-slate-700 text-base font-semibold font-['Inter'] leading-none">
+                <span className="text-slate-700 text-base font-semibold font-inter leading-none">
                   5.0
                 </span>
               </div>
-              <p className="text-slate-600 text-base font-medium font-['Inter'] leading-none">
+              <p className="text-slate-600 text-base font-medium font-inter leading-none">
                 from 3,000+ reviews
               </p>
             </div>
           </div>
         </div>
-        <div className=" md:max-w-xl w-full aspect-[584/424] relative">
+        <div className="md:max-w-[545px] w-full aspect-[584/424] relative">
           <Image
             fill
             sizes="100%"
