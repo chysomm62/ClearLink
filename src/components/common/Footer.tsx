@@ -1,6 +1,5 @@
 import Image from "next/image";
 import logo from "@/assets/images/logo.svg";
-// import { FacebookIcon, InstagramIcon, XIcon } from "@/assets/icons";
 import { Key } from "react";
 import Link from "next/link";
 import { UrlObject } from "url";
@@ -152,7 +151,7 @@ export default Footer;
 const FooterLinks = (props: { header: string; links: any }) => {
   const { header, links } = props;
   return (
-    <div className="w-[calc(50%-20px)] md:max-w-40 flex-col justify-start items-start gap-2.5 sm:gap-4 flex">
+    <div className="w-[calc(50%-20px)] md:w-auto md:max-w-40 flex-col justify-start items-start gap-2.5 sm:gap-4 flex">
       <h4 className="text-gray-500 text-base font-semibold font-['Inter'] leading-normal">
         {header}
       </h4>

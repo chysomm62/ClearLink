@@ -5,7 +5,7 @@
 html {
   scroll-behavior: smooth;
   background: white;
-  scroll-padding-top: var(--scroll-padding, 80px);
+  scroll-padding-top: var(--scroll-padding, 60px);
   -webkit-text-size-adjust: 100%;
 }
 
@@ -20,7 +20,7 @@ body {
 }
 
 button {
-  @apply whitespace-nowrap;
+  @apply whitespace-nowrap hover:brightness-90 transition duration-300 ease-out;
 }
 
 * {
