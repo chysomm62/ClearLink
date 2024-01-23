@@ -73,22 +73,22 @@ const socials = [
 ];
 const Footer = () => {
   return (
-    <footer>
+    <footer id="solutions">
       <div className="bg-indigo-50">
         <div className=" max-w-screen-xl mx-auto px-5 md:px-16 flex flex-wrap items-start justify-between py-9 md:py-20 gap-5 md:gap-8">
-          <div className="flex-1 w-full max-w-96">
-            <div className="w-[152px] h-7 relative">
-              <Link href="/" title="Go to home page">
+          <div className="lg:flex-1 w-full max-w-96">
+            <Link href="/" title="Go to home page">
+              <div className="w-[152px] h-7 relative">
                 <Image
                   fill
                   sizes="100%"
                   src={logo}
                   alt="Clear link logo"
-                  className="z-50 w-24 lg:w-auto"
+                  className="z-50 object-contain"
                   priority
                 />
-              </Link>
-            </div>
+              </div>
+            </Link>
             <p className="text-slate-600 text-lg font-normal font-['Inter'] leading-7 mt-7">
               ClearLink is your gateway to effortless, high-quality video
               conferencing. Join us in shaping the future of communication!
@@ -132,7 +132,11 @@ const Footer = () => {
           </p>
           <div className="justify-start items-start gap-5 inline-flex">
             {socials.map((social, i: Key) => (
-              <Link key={i} href={social.link} className="text-2xl">
+              <Link
+                key={i}
+                href={social.link}
+                className="text-2xl text-gray-400 hover:text-blue-700"
+              >
                 {social.logo}
               </Link>
             ))}

@@ -4,7 +4,7 @@ import React from "react";
 const Companies = () => {
   return (
     <section>
-      <div className="max-w-screen-xl mx-auto py-10 md:py-20 px-5 md:px-16 ">
+      <div className="max-w-screen-xl mx-auto py-10 md:py-20 px-5 md:px-16">
         <p className=" text-center text-slate-600 text-lg sm:text-xl font-medium font-['Inter'] mb-8 md:mb-11">
           Join 1,500+ companies already video conferencing the ClearLink way
         </p>

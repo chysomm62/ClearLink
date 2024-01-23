@@ -8,11 +8,7 @@ import { usePathname, useRouter } from "next/navigation";
 import { Key, useEffect, useState } from "react";
 import { MdClose, MdMenu } from "react-icons/md";
 
-import {
-  FaChevronCircleDown,
-  FaChevronDown,
-  FaChevronRight,
-} from "react-icons/fa";
+import { FaChevronDown } from "react-icons/fa";
 import { NavList } from "../../lib/variables/NavList";
 import Button from "./Buttons";
 
@@ -53,33 +49,33 @@ const Nav = () => {
     >
       <div
         className={`max-w-screen-xl mx-auto shadow-12 flex justify-between items-start lg:items-center px-8 py-4 bg-gray-100 rounded-[100px] border border-gray-300 relative ${
-          isMenuOpen ? "menu overflow-y-auto" : "h-[5.25rem]"
+          isMenuOpen ? "menu overflow-y-auto rounded-3xl" : "h-[5.25rem]"
         }`}
       >
-        <div className="hidden lg:block w-[152px] h-7 relative">
-          <Link href="/" title="Go to home page">
+        <Link href="/" title="Go to home page" className="hidden lg:block ">
+          <div className="hidden lg:block w-[152px] h-7 relative">
             <Image
               fill
               sizes="100%"
               src={Logo}
               alt="Clear link logo"
-              className="z-50 w-24 lg:w-auto"
+              className="z-50 object-contain"
               priority
             />
-          </Link>
-        </div>
-        <div className="py-8 lg:hidden">
-          <Link href="/" title="Go to home page">
+          </div>
+        </Link>
+        <Link href="/" title="Go to home page">
+          <div className="lg:hidden mt-3 w-8 h-8 relative">
             <Image
               fill
               sizes="100%"
               src={mobileLogo}
               alt="Clear link logo"
-              className="z-50 w-24 lg:w-auto"
+              className="z-50 object-contain"
               priority
             />
-          </Link>
-        </div>
+          </div>
+        </Link>
         <div
           className={
             isMenuOpen
@@ -87,7 +83,7 @@ const Nav = () => {
               : "hidden w-full lg:flex items-center justify-center flex-col lg:static lg:h-auto lg:flex-row lg:justify-between transition duration-500 ease-in-out subMenu"
           }
         >
-          <ul className="flex flex-col lg:flex-row lg:ml-10 lg:justify-center lg:items-center gap-3 lg:gap-7 lg:flex-1 text-left lg:text-center w-full lg:px-1 flex-1 py-6 lg:py-0">
+          <ul className="flex flex-col lg:flex-row lg:ml-10 lg:justify-center lg:items-center gap-3 lg:gap-7 lg:lg:flex-1 text-left lg:text-center w-full lg:px-1 lg:flex-1 py-6 lg:py-0">
             {NavList.map((link, index: Key) => (
               <Dropdown
                 key={`${link.label} - ${index}`}
@@ -99,7 +95,7 @@ const Nav = () => {
           </ul>
         </div>
 
-        <div className="flex flex-col lg:flex-row items-center gap-2">
+        <div className="hidden lg:flex items-center gap-2">
           <Button className=" bg-white border border-gray-400 text-gray-900 ">
             Talk to sales
           </Button>
@@ -107,7 +103,7 @@ const Nav = () => {
           <Button className="bg-blue-700 text-white">Sign up for free</Button>
         </div>
 
-        <div className="flex gap-4 items-center z-50 lg:hidden py-5 lg:py-0">
+        <div className="flex gap-4 items-center z-50 lg:hidden py-3 lg:py-0">
           <button className="relative z-10 md:hidden pl-3" onClick={toggleMenu}>
             {isMenuOpen ? (
               <div className="border border-purple-1 rounded-full p-1">
@@ -132,7 +128,7 @@ const Dropdown = (props: { link: any; basePath: string; linkClick: any }) => {
     <>
       <li
         onClick={() => {
-          !link.sub ? linkClick(link.href) : "";
+          linkClick(link.href);
         }}
         className={
           basePath === link.id

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description: "Uniting the world,\none video call at a time",
 
   icons: {
-    shortcut: ["/site-icons/favicon.ico"],
+    shortcut: ["./favicon.ico"],
     apple: ["/site-icons/apple-touch-icon.png"],
     icon: [
       {

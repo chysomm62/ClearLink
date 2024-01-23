@@ -22,3 +22,7 @@ body {
 button {
   @apply whitespace-nowrap;
 }
+
+* {
+  @apply transition ease-in-out duration-300;
+}
